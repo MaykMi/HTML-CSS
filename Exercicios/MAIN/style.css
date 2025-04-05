@@ -160,7 +160,7 @@ button:active {
 #show-or-hideHTML {
   text-align: center;
   background-color: var(--button-background);
-  padding: 5px 170px 5px 170px;
+  padding: 5px 120px 5px 120px;
   margin: 10px auto 30px auto;
   border-radius: 13px;
   box-shadow: 5px 5px 5px var(--shadow);
@@ -174,7 +174,7 @@ button:active {
   border-left-color: var(--button-inter);
   box-shadow: 0px 0px 0px transparent;
   position: relative; top: 10px; left: 10px;
-  padding: 5px 170px 5px 170px;
+  padding: 5px 120px 5px 120px;
   margin: 10px auto 35px auto;
   display: block;
 }
@@ -186,7 +186,7 @@ button:active {
 #show-or-hideCSS {
   text-align: center;
   background-color: var(--button-background);
-  padding: 5px 170px 5px 170px;
+  padding: 5px 120px 5px 120px;
   margin: 10px auto 30px auto;
   border-radius: 13px;
   box-shadow: 5px 5px 5px var(--shadow);
@@ -200,7 +200,7 @@ button:active {
   border-left-color: var(--button-inter);
   box-shadow: 0px 0px 0px transparent;
   position: relative; top: 10px; left: 10px;
-  padding: 5px 170px 5px 170px;
+  padding: 5px 120px 5px 120px;
   margin: 10px auto 35px auto;
   display: block;
 }
