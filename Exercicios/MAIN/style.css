@@ -8,7 +8,8 @@
   --text-background: #e6ffff;
   --text-shadow: rgba(112, 195, 216, 0.548);
   --text-border: rgb(2, 2, 131);
-  --link-color: rgba(201, 255, 201, 0.616);
+  --link-color: rgba(154, 255, 154, 0.849);
+  --link-text-color: rgb(117, 19, 57);
   --rodape-background: #c5ccfa86;
   --rodape-border: #e0c5fa48;
   /*Cores do gratiente(do fundo, em ordem)*/
@@ -85,6 +86,7 @@
 
 .modulos {
   margin: 0px 0px 10px 0px;
+  transition-duration: 1s;
 }
 
 .modulos:hover {
@@ -282,12 +284,16 @@ mark {
   box-shadow: 5px 5px 5px var(--text-shadow);
   margin-bottom: 50px;
 }
+
 abbr {
   text-decoration: underline;
 }
+
 a {
   text-decoration: none;
+  color: var(--link-text-color);
 }
+
 a:hover {
   text-decoration: underline;
 }
