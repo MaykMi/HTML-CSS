@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-image: linear-gradient(180deg, white, rgb(206, 255, 216));
+    background-attachment: fixed;
+    font-family: Josefin Sans;
+}
+h1{
+    color: rgb(110, 75, 81);
+    font-weight: 600;
+}
+h2 {
+    color: rgb(110, 75, 81);
+}
+#principal {
+    text-align: center;
+    background-color: bisque;
+    font-weight: bold;
+}
+.basico {
+    color: greenyellow;
+}
+
+.intermediario {
+    color: orange;
+}
+.avançado {
+    color: red;
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+}

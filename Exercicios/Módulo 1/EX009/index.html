@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: rgb(117, 116, 167);
+            }
+        </style>
+    <link rel="shortcut icon" href="bheart.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Tipos de links</h1>
+        <h2>Links externos</h2>
+            <p>Você pode acessar o <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório publico no Github do guanabara</a>.</p>
+            <p>É possivel acessar outras paginas web através da tag &lt;a&gt; e &lt;/a&gt;. Onde o link (caminho) do site é inserido no atributo <q>href=""</q> e utilizando os atributos <q>target="_blank"</q> e <q>rel="external"</q> podemos manter a pagina atual aberta após abrir algum link para outra pagina.</p>
+        <h2>Links internos</h2>
+            <p>Esta é a primeira pagina do site, Se  você quiser, pode acessar também a minha <a href="pag002.html" rel="next">Segunda página.</a></p>
+                <p>É possível transitar entre paginas internas, tudo depende do caminho utilizado, porem para voltar normalmente é utilizado o comando <q>../</q> ou <q>./</q>(tudo depende do o quanto quer volta) antes do caminho inserido no atributo <q>href=""</q> um exemplo de um tag de link para voltar a pagina anterior: &lt;a&gt; href="</em><q>../<em>link</em></q>" ref="prev"&lt;/a&gt;</p>
+        <h2>Links para download</h2>
+            <ul>
+                <li><a href="Livro/10 - Ligações em toda parte.pdf" download="Livro/10 - Ligações em toda parte.pdf" type="application/pdf">Livro em PDF</a></li>
+                <li><a href="Livro/10 - Ligações em toda parte.rar" download="Livro/10 - Ligações em toda parte.rar" type="application/rar">Livro compactado em .RAR</a></li>
+            </ul>
+
+            <a style="position: relative; top: 10px;" href="../Geral.html">Voltar</a>
+</body>
+</html>

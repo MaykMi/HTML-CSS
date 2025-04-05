@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background-image: linear-gradient(180deg, rgb(248, 250, 219), rgb(165, 212, 147));
+    background-attachment: fixed;
+    font-family: Josefin Sans;
+}
+h1{
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    border: 10px solid darkslategray;
+    padding: 10px 0px 10px 0px;
+}
+a{
+    border: 10px solid red;
+}
+main{
+    margin: 30px;
+}

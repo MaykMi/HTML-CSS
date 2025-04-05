@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: bisque;
+            }
+        </style>
+    <link rel="shortcut icon" href="../EX009/bheart.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+        <h2>Imagens dinâmicas</h2>
+            <picture>
+                <source media="(max-width: 750px)" srcset="Imagens/Doguinho/300x300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="Imagens/Doguinho/700x700.png" type="image/png">
+                <img src="Imagens/Doguinho/1000x1000.png" alt="Doguinho">
+            </picture>
+                    <p>Para a utilização de imagens dinamicas é usado a tag &lt;picture&gt; onde utilizamos a tag &lt;source&gt; para as duas primeiras imagens (as que vão ter variação de tamanho no site), o processo para ocorrer o dinamismo é com a ordem da maior imagem(no caso 1000x1000) com a tag &lt;img&gt;, a cima temos a tag &lt;source&gt; com os atributos <q>midia=""</q> onde determinamos o valor de mudança de estatura, <q>srcset=""</q> onde se coloca a localização/endereço da imagem e <q>type=""</q> onde determinamos o tipo de imagem que está sendo trabalhada. As imagens são postas em ordem, de cima pra baixo da menor para a maior, onde a maior se utiliza apenas da tag &lt;img&gt;<br>O atributo <q>midia=""</q> Costuma conter min-width, porém por escolha pessoal utilize a max-width, E o conteúdo seria o tamanho da imagem seguinte com a soma de 50px</p>
+        <h2>Audio</h2>
+            <!--MP3, WAV, OGG -->
+            <audio preload="metadata" autoplay controls>
+                <source src="midia/The Office Theme Son.mp3" type="audio/mpeg">
+            </audio>
+                <p>É possivel utilizar arquivos <q>.mp3</q>, <q>.ogg</q>, <q>.wav</q>, não é recomendado o uso do arquivo <q>.wav</q> por conta de ser muito pesado, para aplicar o serviço de audio a um site é necessário usar a tag &lt;audio&gt; e &lt;/audio&gt;, dentro do elemento <q>audio</q>, utilizamos o &lt;source&gt; com o atributo <q>src=""</q> que serve para localizar a mídia e o atributo<q>type=""</q> para determinar o tipo de audio está sendo utilizado no arquivo em questão. A tag &lt;audio&gt; necessita ter  os atributos <q>preload=""</q> que pode conter:auto(download completo), metadata(download parcial, o recomendado) e none(nem um download). O atributo <q>autoplay</q> para dar play kk e o atributo <q>controls</q> para dar o controle de audio, além do atributo <q>loop</q> que deixa a musica em looping</p>
+                <p>Os tipos de audio (Formato/type)</p>
+                <ul>
+                    <li>MP3: mpeg</li>
+                    <li>ogg: ogg</li>
+                    <li>wav: wav</li>
+                </ul>
+
+<a style="position: relative; top: 10px;" href="../Geral.html">Voltar</a>
+</body>
+</html>

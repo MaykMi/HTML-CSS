@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+    <title>Main</title>
+</head>
+<body>
+<div class="menu">
+    <h1>MAIN MENU</h1>
+</div>
+<main>
+    <hr>
+    <p>Aqui é o menu com módulos de estudo/exercícios, coisas a lembrar, tips entre outras coisas</p>
+    <hr>
+    
+        <h4>
+            <button id="show-or-hide">
+                <strong>Módulos</strong>
+            </button>
+        </h4>
+        <div class="container">
+            <ol class="space">        
+                <li class="modulos"><a href="../Módulo 1/geral.html">Módulo 1</a></li>
+                <li class="modulos"><a href="../Módulo 2/geral.html">Módulo 2</a></li>
+                <li class="modulos"><a href="../Módulo 3/geral.html">Módulo 3</a></li>
+            </ol>
+        </div>
+   
+    <hr>
+   
+        <h2>
+            <button id="show-or-hide2"><strong>Coisas a recordar</strong></button>
+        </h2>
+        <div class="container2">
+            <button id="show-or-hideHTML"><strong>HTML</strong></button>
+           <div class="containerHTML">
+                    
+                           <ol class="space">
+                   <li class="listaspace"><abbr title="Para por emojis, é necessário &#x+código do emoji(normalmente pego do emojipidia)"><strong>emoji</strong></abbr></li>
+                   <li class="space"><strong>Formatações</strong></li>
+                       <ul>
+                           <li class="listaspace"><abbr title="tag &lt;abbr&gt;">Abreviações</abbr></li>
+                           <li class="listaspace"><abbr title="tag &lt;blockquote&gt; e possui o atributo 'cite' onde inserimos o link de origem da citação">Citações completas</abbr></li>
+                           <li class="listaspace"><abbr title="tag &lt;mark&gt;">Texto marcado</abbr></li>
+                           <li><abbr title="tag &lt;big&gt;">Texto grande</abbr></li>
+                           <li class="listaspace"><abbr title="tag &lt;small&gt;">Texto pequeno</abbr></li>
+                           <li><abbr title="tag &lt;del&gt;">Texto deletado</abbr></li>
+                           <li class="listaspace"><abbr title="tag &lt;ins&gt;">Texto inserido</abbr></li>
+                           <li><abbr title="tag &lt;sup&gt;">Texto sobrescrito</abbr></li>
+                           <li class="listaspace"><abbr title="tag &lt;sub&gt;">Texto subescrito</abbr></li>
+                       </ul>
+                   <li class="space"><strong>Atributos dos links</strong></li>
+                       <ul>
+                           <li class="listaspace"><abbr title="define onde o documento vinculado será aberto">target</abbr></li>
+                               <ul class="sublistapp"><p>target pode utilizar:</p>
+                                   <li><abbr title="abre o documento no mesmo frame onde foi clicado">"_self"</abbr></li>
+                                   <li><abbr title="abre o documento numa nova janela ou aba">"_blank"</abbr></li>
+                                   <li><abbr title="abre o documento no frame do elemento pai">"_parent"</abbr></li>
+                                   <li><abbr title="especifica a janela superior">"_top"</abbr></li>
+                                   <li class="listaspace"><abbr title="especifica uma nova janela">"_new"</abbr></li>
+                               </ul>
+                           <li class="listaspace"><abbr title="Atributo que define a relação entre a página de origem e o destino do link">rel</abbr></li>
+                               <ul class="sublistapp"><p>rel pode utilizar:</p>
+                                   <li><abbr title="Indica que o link deve ser ignorado">"nofollow"</abbr></li>
+                                   <li><abbr title="Indica que o arquivo importado é o responsável pelo estilo da página ">'stylesheet"</abbr></li>
+                                   <li><abbr title="Indica a relação em uma série paginada">"next e prev"</abbr></li>
+                                   <li><abbr title="Define a relação paga entre a página e a página externa ">"sponsored"</abbr></li>
+                                   <li><abbr title="Importa um ícone relacionado para a página ">"icon"</abbr></li>
+                                   <li class="listaspace"><abbr title="Oculta informações de referência para privacidade e proteção do usuário">"noopener noreferrer"</abbr></li>
+                               </ul>
+                       </ul>
+                           <p class="listaspace"><ins>download</ins> necessita o link de diretório para o arquivo que quer disponibilizar para download.<br>Seguido do atributo <abbr title="é usado para especificar o tipo de conteúdo que uma tag está importando, ex: application/rar, application/pd. Depende do tipo de arquivo disponibilizado para download">type</abbr></p>
+               
+                   <li class="space"><strong>Imagens dinamicas (tags)</strong></li>
+                       <ul>
+                           <li class="listaspace">&lt;picture&gt;</li>
+                           <li class="listaspace"><abbr title="atributos: media=(max-width:) srcset(localizar) e type(determina tipo do arquivo, ex: image/png. Podendo ser PNG | JPEG)">&lt;source&gt;</abbr></li>
+                       </ul>
+                   <li class="space"><strong>Audios tags</strong></li>
+                       <ul>
+                           <li class="listaspace"><abbr title="atributos: srcset(localizar) e type(determina tipo do arquivo, ex: audio/mpeg. Podendo ser mp3:mpeg | ogg: ogg | wav: wav)">&lt;source&gt;</abbr></li>
+                           <li class="space">audio atributos</li>
+                               <ul class="sublistapp">
+                                   <li><abbr title="que pode ser auto(download completo), metadata(download parcial), none(sem download)">preload</abbr></li>
+                                   <li><abbr title="para disponibilizar o play">autoplay</abbr></li>
+                                   <li><abbr title="para dar os controles">controls</abbr></li>
+                                   <li class="listaspace"><abbr title="para deixar em loop">loop</abbr></li>
+                               </ul>
+                       </ul>
+                   <li class="space"><strong>Videos tags</strong></li>
+                       <ul>
+                           <li class="listaspace"><abbr title="atributos: srcset(localizar) e type(determina tipo do arquivo, ex: video/mp4. Podendo ser mp4 | WebM | OGV)">&lt;source&gt;</abbr></li>
+                           <li class="space">video atributos</li>
+                               <ul class="sublistapp">
+                                   <li><abbr title="para adicionar thumb">poster</abbr></li>
+                                   <li class="listaspace"><abbr title="para dar os controles">controls</abbr></li>
+                               </ul>
+                       </ul>
+                   <li class="space"><strong>Modelo de caixas</strong></li>
+                   <ul>
+                       <li class="space">Propriedades</li>
+                           <ul class="sublistapp">
+                               <li><abbr title="altura">height</abbr></li>
+                               <li><abbr title="largura">width</abbr></li>
+                               <li><abbr title="determina uma linha interna">border</abbr></li>
+                               <li><abbr title="determina o espaço interno">padding</abbr></li>
+                               <li><abbr title="determina uma linha externa">outline</abbr></li>
+                               <li class="listaspace"><abbr title="determina o espaço externo">margin</abbr></li>
+                           </ul>
+                       <li class="space"><abbr title="sempre ocupando a largura total da tela, ele se inicia em uma linha nova">box-level (tags ex: div, h1)</abbr></li>
+                       <li class="space"><abbr title="ocupa o espaço necessário pro elemento e se mantem na mesma linha">inline-level (tags ex: span, a)</abbr></li>
+                       <p class="space">É possivel transformar um box-level em um inline-level e vice-versa, utilizando a Propriedade: display</p>
+                       <li class="space">Grouping Tags</li>
+                           <ul class="sublistapp">
+                               <li><abbr title="tag box-level de cabeçalho">header</abbr></li>
+                               <li><abbr title="tag box-level de navegação, comporta links">nav</abbr></li>
+                               <li><abbr title="tag box-level de conteudo principal">main</abbr></li>
+                               <li><abbr title="tag box-level de rodapé">footer</abbr></li>
+                               <li><abbr title="tag box-level de sessão">section</abbr></li>
+                               <li><abbr title="tag box-level de artigo">article</abbr></li>
+                               <li><abbr title="tag box-level de conteúdo periférico ao artigo">aside</abbr></li>
+                           </ul>
+                   </ul>
+               </ol>
+               
+           </div>     
+            <button id="show-or-hideCSS">CSS</button>
+            <div class="containerCSS">
+                
+                <div class="componentes"><strong>Componetes</strong>
+                    <div class="componentes2">
+                      <strong>Seletor:</strong> Indica quais elementos HTML serão estilizados <br>
+                      <strong>Propriedade:</strong> Define como estilizar um elemento HTML <br>
+                      <strong>Valor:</strong> Escolhe uma aparência para a propriedade <br>
+                      <strong>Declaração:</strong> Especifica quais propriedades do elemento serão estilizadas <br>
+                      <strong>Regra:</strong> É composta por um seletor e um bloco de declarações.
+                    </div>
+                </div>
+                <ol>
+                    <li class="listaspace"><abbr title="tag html: span, é um conteiner generico em linha para conteúdo fraseado, podendo utilizar class ou id na tag para aplicar a css">span</abbr></li>
+                    <li class="listaspace"><abbr title="colocar uma borda, usa tamanho, estilo e cor">border</abbr></li>
+                    <li><abbr title="configurar a duração da transição">transition-duration</abbr></li>
+                    <li class="space">
+                    <abbr title="define se um elemento é tratado como um bloco ou elemento inline e o layout usado para seus filhos, como layout de fluxo, grid ou flex.">display</abbr></li>
+                        <ul><p class="space">Podendo ser:</p>
+                            <li><abbr title="oculta completamente um elemento de uma página web.">none</abbr></li>
+                            <li><abbr title="permite definir a largura, altura, margens e preenchimentos de um elemento">inline-block(bloco)</abbr></li>
+                            <li class="listaspace"><abbr title="Indica que um elemento deve ser exibido como um bloco, ou seja, ocupando toda a largura disponível na página.">block</abbr></li>
+                        </ul>
+                    <li class="space"><strong><abbr title="permite controlar como uma imagem se comporta em relação à barra de rolagem da página.">background-attachment</abbr></strong></li>
+                        <ul><p class="space">Podendo ser:</p>
+                            <li><abbr title="A imagem de fundo segue o fluxo natural da página">scroll</abbr></li>
+                            <li class="listaspace"><abbr title="fixa a imagem de fundo em relação ao viewport. ">fixed</abbr></li>
+                        </ul>
+                    <li class="space"><strong>Detalhes sobre fontes</strong></li>
+                        <ul>
+                            <li class="space"><abbr title="Define a intensidade ou o peso da fonte(a grossura dos caracteres)."></abbr>font-weight</li>
+                            <li class="space"><abbr title="é para o estilo da fonte.">font-style</abbr></li>
+                            <li class="space"><abbr title="E usada para definir a formatação de linhas decorativas no texto, como underline, overline, line-through ou blink.">text-decoration</abbr></li>
+                            <li class="space"><abbr title="direita, baixo, expansividade e cor">text-shadow</abbr></li>
+                            <li class="space"><abbr title="Para afastar da borda a primeira palavra, correção ortográfica da lingua portuguêsa">text-indent</abbr></li>
+                            <li class="space"><abbr title="Para justificar o texto, igualando espaçamentos na esquerda e na direita">text-align: justify</abbr></li>
+                            <li class="space"><abbr title="font-style font-weight font-size font-family">shorthand de fontes</abbr></li>
+                            <li class="space"><abbr title="Regra: @font-face">Fontes externas</abbr></li>
+                                <ul class="sublistapp">
+                                    <li><abbr title="Nome que iremos dar a fonte">font-family</abbr></li>
+                                    <li><abbr title="irá compor o url(localização da font) e o format(formato da fonte)">src</abbr></li>
+                                    <li class="listaspace"><abbr title="Tipos de format(): opentype(otf) | truetype(ttf) | embedded-opentype | truetype-aat (Apple advanced Typography) | svg">format</abbr></li>
+                                </ul>
+                        </ul>
+                    <li class="space"><strong>Seletores personalizados</strong></li>
+                        <ul>
+                            <li class="space"><abbr title="é utilizado #+nome na css para identificar a id colocada na html">id</abbr></li>
+                            <li class="space"><abbr title="É utilizado .+nome na css para identificar a class colocada na html. É possivel aplicar mais de uma classe em um elemento">class</abbr></li>
+                            <p class="listaspace"><strong>A diferença entre id e class:</strong> é recomendado utilizar id somente em um unico elemento, e caso precise ser mais de um elemento utilize class.</p>
+                            <li class="listaspace"><abbr title="Espaço qualquer">div</abbr></li>
+                            <li class="space"><abbr title="Determina o estado do elemento ou classe">Pseudo-classes</abbr></li>
+                            <p class="space">Utiliza a propriedade <q>:</q></p>
+                            <ul class="sublistapp"><p class="space">Podendo ser:</p>
+                                <li><abbr title="altera o estilo de um elemento HTML quando o usuário passa o mouse sobre ele.">hover</abbr></li>
+                                <li><abbr title="Para estilizar links visitados adequadamente">visited</abbr></li>
+                                <li class="listaspace"><abbr title="altera o estilo de um elemento HTML quando o usuário clica com o mouse nele.">active</abbr></li>
+                            </ul>
+                            <li class="space"><abbr title="permite a estilização do elemento selecionado">Pseudo-elemento</abbr></li>
+                            <p class="space">Utiliza a propriedade <q>::</q></p>
+                                <ul class="sublistapp"><p class="space">Podendo ser:</p>
+                                    <li><abbr title="possivel alterar/adicionar algo antes do elemento">before</abbr></li>
+                                    <li class="listaspace"><abbr title="possivel alterar/adicionar algo depois do elemento">after</abbr></li>
+                                </ul>
+                            <li class="listaspace"><abbr title="é um elemento que está subordinado a um elemento pai, utiliza o combinador: >">Filho</abbr></li>
+                        </ul>
+                    <li class="space"><strong>Váriaveis em css</strong></li>
+                        <ul>
+                            <li class="space"><abbr title="area principal onde se declara variáveis globais">:root{}</abbr></li>
+                            <li class="space"><abbr title="Toda variável começa com isso">--</abbr></li>
+                            <li class="listaspace"><abbr title="É um seletor especial, de configurações globais">*{}</abbr></li>
+                        </ul>
+                    <li class="space">Responsividade para sites</li>
+                        <ul>
+                            <li class="space"><abbr title="min-width:300px | max-width: 800px">Largura ideal</abbr></li>
+                            <p>O ideal é utilizar a tag *{} e configurar o margin e padding para 0px para a partir dai começar a configurar os espaçamentos.</p>
+                        </ul>
+                </ol>
+            </div>
+        </div>
+
+    <hr>
+
+                <h2><button id="show-or-hide3"><strong>Tips and Tricks</strong></button></h2>
+            <div class="container3">
+                <ul>
+                    <li class="space"><code>tag.tag$*</code></li>
+                    <p class="listaspace">Esse código é utilizado para multiplicar Tags.</p>
+                    <li class="space">tag 1&gt;tag 2&gt;tag 3&gt;</li>
+                    <p class="listaspace">É possivel multicamadas de tags com uma linha de código</p>
+                    <li class="space"><q>Ctrl+Shift+p</q></li>
+                    <p class="listaspace">Para demarcar e utilizando emmet(envolver com abreviação) podemos adicionar um uma tag ou código a algo que já foi posto.</p>
+                    <li class="space"><q>Ctrl + space</q></li>
+                    <p class="listaspace">É possivel selecionar o diretório com este comando e para selecionar pastas anteriores é possivel usar o <code>../</code></p>
+                </ul>
+            </div>
+        
+</main>
+    <footer>
+        <p class="rodape">Desenvolvido por mi</p>
+    </footer>
+</body>
+</html>
