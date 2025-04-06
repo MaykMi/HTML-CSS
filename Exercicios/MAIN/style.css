@@ -60,19 +60,11 @@
   display: block;
 }
 
-.modulostitulo {
-  background-color: #eee2fa;
-  padding: 5px;
-  border-radius: 20px;
-  border: 1px solid var(--purple-border);
-  box-shadow: 5px 5px var(--shadow);
-}
-
-.minimal {
-  margin: 0px 0px 20px 0px;
-}
-
 .container {
+  display: none;
+}
+
+.containerd {
   display: none;
 }
 
@@ -136,6 +128,38 @@ body {
   );
   background-attachment: fixed;
   font: 1em Roboto Mono;
+}
+
+.buttonleft {
+  position: relative; left: -40px;
+}
+
+.buttonright {
+  position: relative; left: 40px;
+}
+
+.buttonleft:active {
+  border: inset;
+  border-width: 5px 0px 0px 5px;
+  border-top-color: var(--button-inter);
+  border-left-color: var(--button-inter);
+  box-shadow: 0px 0px 0px transparent;
+  position: relative;
+  top: 8px;
+  left: -30px;
+  margin: 0px 5px 10px 0px;
+}
+
+.buttonright:active {
+  border: inset;
+  border-width: 5px 0px 0px 5px;
+  border-top-color: var(--button-inter);
+  border-left-color: var(--button-inter);
+  box-shadow: 0px 0px 0px transparent;
+  position: relative;
+  top: 8px;
+  left: 50px;
+  margin: 0px 0px 10px 5px;
 }
 
 button {
@@ -237,6 +261,7 @@ h3 {
 
 h4 {
   text-align: center;
+  line-height: 0;
   margin: 0px 0px 20px 0px;
 }
 

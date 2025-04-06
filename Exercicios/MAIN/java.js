@@ -11,6 +11,19 @@ btn.addEventListener('click', function() {
 
 });
 
+var btn = document.querySelector('#show-or-hided');
+var containerd = document.querySelector('.containerd');
+
+btn.addEventListener('click', function() {
+
+    if(containerd.style.display ==='block') {
+        containerd.style.display = 'none';
+    } else {
+        containerd.style.display = 'block';
+    }
+
+});
+
 var btn = document.querySelector('#show-or-hide2');
 var container2 = document.querySelector('.container2');
 
