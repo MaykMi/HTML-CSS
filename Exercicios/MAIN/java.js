@@ -75,3 +75,16 @@ btn.addEventListener('click', function() {
     }
 
 });
+
+var btn = document.querySelector('#show-or-hideCV');
+var containerCV = document.querySelector('.containerCV');
+
+btn.addEventListener('click', function() {
+
+    if(containerCV.style.display ==='block') {
+        containerCV.style.display = 'none';
+    } else {
+        containerCV.style.display = 'block';
+    }
+
+});

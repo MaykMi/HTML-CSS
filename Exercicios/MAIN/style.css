@@ -76,6 +76,10 @@
   display: none;
 }
 
+.containerCV {
+  display: none;
+}
+
 .modulos {
   margin: 0px 0px 10px 0px;
   transition-duration: 1s;
@@ -143,7 +147,7 @@ body {
 
 .buttonright {
   position: relative; left: 40px;
-  top: -1px
+  top: -0.5px
 }
 
 .buttonleft:active {
@@ -165,7 +169,7 @@ body {
   border-left-color: var(--button-inter);
   box-shadow: 0px 0px 0px transparent;
   position: relative;
-  top: 7px;
+  top: 7.5px;
   left: 50px;
   margin: 0px 0px 10px 5px;
 }
@@ -191,6 +195,30 @@ button:active {
   top: 5px;
   left: 5px;
   margin: 0px 0px 10px 0px;
+}
+
+#show-or-hideCV {
+  text-align: center;
+  background-color: var(--button-background);
+  padding: 5px 90px 5px 90px;
+  margin: 10px auto 30px auto;
+  border-radius: 13px;
+  box-shadow: 5px 5px 5px var(--shadow);
+  display: block;
+}
+
+#show-or-hideCV:active {
+  border: inset;
+  border-width: 5px 0px 0px 5px;
+  border-top-color: var(--button-inter);
+  border-left-color: var(--button-inter);
+  box-shadow: 0px 0px 0px transparent;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  padding: 5px 90px 5px 90px;
+  margin: 10px auto 35px auto;
+  display: block;
 }
 
 #show-or-hideHTML {
