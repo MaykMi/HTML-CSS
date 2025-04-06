@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        a {
+        body{
+            background-color: rgb(20, 20, 20);
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .linkv {
                     background-color: rgb(22, 22, 102);
                     padding: 5px;
                     border-radius: 10px;
                     color: azure;
                     text-decoration: none;
         }
-        a:hover {
+        .linkv:hover {
                     color: rgb(22, 22, 102);
                     background-color: azure;
         }
@@ -20,10 +26,30 @@
                     margin: 30px auto 20px auto;
                     text-align: center;
         }
+        .linha {
+            position: relative; top: -15px;
+        }
     </style>
     <title>videos</title>
 </head>
 <body>
-    <p class="voltar"><a href="../geral.html">Voltar</a></p>
+    <h1>Videos legais para assistir</h1>
+    <p>
+        <a href="html.html">
+            <img src="imagens/thumb-html.png" alt="thumb-html">
+        </a>
+        <a href="js.html">
+            <img src="imagens/thumb-js.png" alt="thumb-js">
+        </a>
+    </p>
+    <p class="linha">
+        <a href="hardware.html">
+            <img src="imagens/thumb-hardware.png" alt="thumb-hardware">
+        </a>
+        <a href="python.html">
+            <img src="imagens/thumb-python.png" alt="thumb-python">
+        </a>
+    </p>
+    <p class="voltar"><a class="linkv" href="../geral.html">Voltar</a></p>
 </body>
 </html>

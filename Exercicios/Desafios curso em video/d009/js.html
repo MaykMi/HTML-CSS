@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(20, 20, 20);
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .fundovideo {
+            background-color: rgb(150, 150, 150);
+            padding: 30px;
+            padding-bottom: 0%;
+            max-width: 560px;
+            height: 315px;
+            margin: auto;
+            position: relative;
+            border-radius: 20px;
+        }
+        .video {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+        }
+        .playlist {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background-color: aliceblue;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .playlist:hover {
+            color: aliceblue;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Curso de JavaScript</h1>
+    <div class="fundovideo">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA?si=a_sSmHNUefxXyELl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p><a class="playlist" href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">Link para a playlist completa</a></p>
+    <p><a href="index.html"><img src="imagens/voltar.png" alt="voltar"></a></p>
+</body>
+</html>

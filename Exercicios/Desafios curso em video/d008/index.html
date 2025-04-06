@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    body {
+        background-color: rgb(167, 167, 167);
+    }
     a {
                 background-color: rgb(22, 22, 102);
                 padding: 5px;
@@ -20,10 +23,41 @@
                 margin: 30px auto 20px auto;
                 text-align: center;
     }
+    li {
+        margin-bottom: 20px;
+    }
+    .verde {
+            background-color: rgb(40, 119, 25);
+            padding: 5px;
+            border-radius: 10px;
+            color: rgb(118, 211, 124);
+            text-decoration: none;
+    }
+    .verde:hover {
+                color: rgb(40, 119, 25);
+                background-color: rgb(118, 211, 124);
+    }
+    .amarela {
+            background-color: rgb(151, 109, 46);
+            padding: 5px;
+            border-radius: 10px;
+            color: rgb(248, 233, 184);
+            text-decoration: none;
+    }
+    .amarela:hover {
+                color: rgb(151, 109, 46);
+                background-color: rgb(248, 233, 184);
+    }
     </style>
     <title>Navegação</title>
 </head>
 <body>
+    <h1>Desafio da Navegação</h1>
+    <p>Esta é a pádina principal, o índice do seu site. É a página cinza. A partir dela você pode acessar as outras áreas principais através dos links a seguir:</p>
+    <ul>
+        <li><a class="verde" href="pagverde.html">Acessar a área verde</a></li>
+        <li><a class="amarela" href="pagamarela.html">Acessar a área amarela</a></li>
+    </ul>
     <p class="voltar"><a href="../geral.html">Voltar</a></p>
 </body>
 </html>
