@@ -4,26 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .voltar {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            background-color: slateblue;
+            color: rgb(255, 255, 255);
+            text-align: center;
             display: block;
-            margin: 50px auto 20px 50px;
-            text-align: left;
+            padding: 10px;
+            box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.37);
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: lighter;
+            line-height: 30px;
+
+        }
+        main {
+            display: block;
+            margin: auto;
+            max-width: 800px;
+            min-width: 500px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            background-color: rgb(214, 215, 255)
+        }
+        li {
+            list-style-position: inside;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .lastli {
+            padding-bottom: 30px;
+        }
+        ol {
+            width: 300px;
+            margin: auto;
         }
         a {
-            background-color: cadetblue;
+            background-color: slateblue;
             padding: 5px;
             border-radius: 10px;
             color: azure;
             text-decoration: none;
         }
         a:hover {
-            color: cadetblue;
+            color: slateblue;
             background-color: azure;
+        }
+        .voltar {
+            display: block;
+            margin: 30px auto 20px auto;
+            text-align: center;
         }
     </style>
     <title>Desafios MIMO</title>
 </head>
 <body>
+    <h1>Desafios</h1>
+    <main>
+        <h2>Lista de desafios feitos através dos modulos do curso de HTML e CSS do curso em video.</h2>
+        <ol>
+            <li><a href="d001/index.html">Linktree (d001)</a></li>
+        </ol>
+    </main>
     <p class="voltar"><a href="../MAIN/main.html">Voltar</a></p>
 </body>
 </html>
