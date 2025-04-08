@@ -1,0 +1,25 @@
+.voltar {
+    background-color: #e0c5fa;
+    padding: 5px;
+    color: purple;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: purple;
+    padding: 5px;
+    color: #e0c5fa;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+}

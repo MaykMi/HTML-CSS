@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.voltar {
+    background-color: #e0c5fa;
+    padding: 5px;
+    color: purple;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: purple;
+    padding: 5px;
+    color: #e0c5fa;
+    border-radius: 10px;
+}
+
+div.bloco {
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    background-image: url(../content/imagen-para-EX/wallpaper003.jpg);
+}
+
+div#q1 {
+    background-position: left top;
+}
+
+div#q2 {
+    background-position: left center;    
+}
+
+div#q3 {
+    background-position: right bottom;
+}
+
+div#q4 {
+    background-position: center center;
+}

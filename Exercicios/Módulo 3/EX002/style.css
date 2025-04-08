@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(https://i.pinimg.com/736x/54/1f/18/541f185e048309697be368588d5eb020.jpg);
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+.voltar {
+    background-color: #e0c5fa;
+    padding: 5px;
+    color: purple;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: purple;
+    padding: 5px;
+    color: #e0c5fa;
+    border-radius: 10px;
+}
