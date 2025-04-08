@@ -8,7 +8,7 @@
   --text-background: #e6ffff;
   --text-shadow: rgba(112, 195, 216, 0.548);
   --text-border: rgb(2, 2, 131);
-  --link-color: rgba(250, 178, 250, 0.849);
+  --link-color: rgba(255, 154, 255, 0.849);
   --link-text-color: rgb(117, 19, 57);
   --rodape-background: #c5ccfa86;
   --rodape-border: #e0c5fa48;
@@ -146,7 +146,6 @@ body {
 button:hover {
   background-color: var(--button-hover);
   box-shadow: 5px 5px 5px var(--button-hover-shadow);
-  transition-duration: 1s;
 }
 
 .buttonleft {
@@ -218,7 +217,6 @@ button:active {
 #show-or-hideCV:hover {
   background-color: var(--button-hover);
   box-shadow: 5px 5px 5px var(--button-hover-shadow);
-  transition-duration: 1s;
 }
 
 #show-or-hideCV:active {
@@ -248,7 +246,6 @@ button:active {
 #show-or-hideHTML:hover {
   background-color: var(--button-hover);
   box-shadow: 5px 5px 5px var(--button-hover-shadow);
-  transition-duration: 1s;
 }
 
 #show-or-hideHTML:active {
@@ -282,7 +279,6 @@ button:active {
 #show-or-hideCSS:hover {
   background-color: var(--button-hover);
   box-shadow: 5px 5px 5px var(--button-hover-shadow);
-  transition-duration: 1s;
 }
 
 #show-or-hideCSS:active {
