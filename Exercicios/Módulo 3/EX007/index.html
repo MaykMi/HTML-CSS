@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../content/favicon.ico" type="image/x-icon">
+    <style>
+    .voltar {
+    background-color: #e0c5fa;
+    padding: 5px;
+    color: purple;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    }
+
+    .voltar:hover {
+    background-color: purple;
+    padding: 5px;
+    color: #e0c5fa;
+    border-radius: 10px;
+    }
+
+    #container {
+        height: 500px;
+        background: purple url(../content/imagen-para-EX/target001.png) center center no-repeat;
+        background-size: 100% 100%;
+        padding: 10px;
+        /*o importante para movimentação vertical*/
+        position: relative;
+    }
+
+    #conteudo {
+        height: 200px;
+        width: 400px;
+        background: yellow url(../content/imagen-para-EX/target001.png) center center no-repeat;
+        background-size: 100% 100%;
+        /*o importante para movimentação vertical*/
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+    <title>alinhamento vertical</title>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <p><a class="voltar" href="../geral.html">voltar</a></p>
+</body>
+</html>
