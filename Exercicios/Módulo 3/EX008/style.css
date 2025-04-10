@@ -16,23 +16,34 @@ h1 {
     font-size: 5em;
 }
 
+.linkheader {
+    color: bisque;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 main {
     max-width: 800px;
     background-color: bisque;
     margin: auto;
-    padding: 25px 0px 0px 0px;
+    margin-bottom: 0;
+    padding: 25px 0px 100px 0px;
 }
 
-article {
-    margin: 0px 0px 100px 30px;
+section {
     font-size: 2em;
     line-height: 60px;
 }
 
+.arti1 {
+    margin: 0px 0px 100px 30px;
+}
+
 .para1 {
-    background: black url(pacote-d012/imagens/background001.jpg) center center;
+    background: black url(pacote-d012/imagens/background001.jpg)  center center fixed;
     padding-top: 50px;
     padding-bottom: 5px;
+    background-size: cover;
 }
 
 .arti2 {
@@ -40,4 +51,42 @@ article {
     color: bisque;
     width: 350px;
     padding-left: 4px;
+    text-shadow: 2px 2px black;
+    margin: 0px 0px 100px 30px;
+}
+
+.arti3 {
+    margin: 0px 0px 100px 30px;
+}
+
+.para2 {
+    background: black url(pacote-d012/imagens/background002.jpg) center center fixed;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.arti4 {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: bisque;
+    width: 350px;
+    padding-left: 4px;
+    text-shadow: 2px 2px black;
+    margin: 0px 0px 100px 30px;
+}
+
+.arti5 {
+    margin: 0px 0px 0px 30px;
+}
+
+footer {
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+.linkfooter {
+    color: bisque;
+    text-decoration: none;
+    font-weight: bolder;
 }
