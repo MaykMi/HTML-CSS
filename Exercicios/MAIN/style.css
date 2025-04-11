@@ -139,8 +139,6 @@ body {
     var(--cor4),
     var(--cor5)
   );
-  background-attachment: scroll;
-  background-size: cover;
   font: 1em Roboto Mono;
 }
 
