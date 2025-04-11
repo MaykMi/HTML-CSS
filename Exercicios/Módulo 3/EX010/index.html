@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt_br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../content/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../content/favicon.ico" type="image/x-icon" />
     <style>
-    .voltar {
-    background-color: #e0c5fa;
-    padding: 5px;
-    color: purple;
-    border-radius: 10px;
-    display: block;
-    text-align: center;
-    font-size: 1.3em;
-    text-decoration: none;
-    }
+        .voltar {
+            background-color: #e0c5fa;
+            padding: 5px;
+            color: purple;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            font-size: 1.3em;
+            text-decoration: none;
+        }
 
-    .voltar:hover {
-    background-color: purple;
-    padding: 5px;
-    color: #e0c5fa;
-    border-radius: 10px;
-    }
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+        .voltar:hover {
+            background-color: purple;
+            padding: 5px;
+            color: #e0c5fa;
+            border-radius: 10px;
+        }
 
-    table {
-        width: 400px;
-        border-collapse: collapse;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    td {
-        border: 1px solid black;
-        text-align: center;
-    }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
     </style>
-    <title>primeira tabela</title>
+    <title>tabela</title>
 </head>
+
 <body>
-    <h1>Primeira tabela</h1>
-    <!--
-        hierarquia de tabelas(simples)
-            table = tabela
-                table row = linha de tabela
-                    table header = cabeçalho de tabela
-                    table data = dado de tabela
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+          TABLE
+            THEAD
+              TR, TD, TH
+            TBODY
+              TR, TD, TH
+            TFOOT
+              TR, TD, TH
     -->
     <table>
-        <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C3</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.023</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>84.352.757</td>
+            </tr>
+        </tfoot>
     </table>
+
     <p><a class="voltar" href="../geral.html">voltar</a></p>
 </body>
+
 </html>

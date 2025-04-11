@@ -54,11 +54,11 @@
   top: -10px;
 }
 
-.componentes > .componentes2 {
+.componentes>.componentes2 {
   display: none;
 }
 
-.componentes:hover > .componentes2 {
+.componentes:hover>.componentes2 {
   display: block;
 }
 
@@ -131,14 +131,12 @@ main {
 }
 
 body {
-  background-image: linear-gradient(
-    135deg,
-    var(--cor1),
-    var(--cor2),
-    var(--cor3),
-    var(--cor4),
-    var(--cor5)
-  );
+  background-image: linear-gradient(135deg,
+      var(--cor1),
+      var(--cor2),
+      var(--cor3),
+      var(--cor4),
+      var(--cor5));
   font: 1em Roboto Mono;
 }
 
@@ -148,11 +146,13 @@ button:hover {
 }
 
 .buttonleft {
-  position: relative; left: -40px;
+  position: relative;
+  left: -40px;
 }
 
 .buttonright {
-  position: relative; left: 40px;
+  position: relative;
+  left: 40px;
   top: -0.5px
 }
 

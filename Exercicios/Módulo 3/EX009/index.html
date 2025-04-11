@@ -1,94 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../content/favicon.ico"
-      type="image/x-icon"
-    />
-    <style>
-      .voltar {
-        background-color: #e0c5fa;
-        padding: 5px;
-        color: purple;
-        border-radius: 10px;
-        display: block;
-        text-align: center;
-        font-size: 1.3em;
-        text-decoration: none;
-      }
 
-      .voltar:hover {
-        background-color: purple;
-        padding: 5px;
-        color: #e0c5fa;
-        border-radius: 10px;
-      }
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../content/favicon.ico" type="image/x-icon" />
+  <style>
+    .voltar {
+      background-color: #e0c5fa;
+      padding: 5px;
+      color: purple;
+      border-radius: 10px;
+      display: block;
+      text-align: center;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
 
-      table {
-        width: 400px;
-        height: 400px;
-        border-collapse: collapse;
-      }
+    .voltar:hover {
+      background-color: purple;
+      padding: 5px;
+      color: #e0c5fa;
+      border-radius: 10px;
+    }
 
-      td {
-        border: 1px solid black;
-        text-align: center;
-        vertical-align: top;
-        padding: 5px;
-      }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-      .numero {
-        vertical-align: bottom;
-      }
-    </style>
-    <title>tabela</title>
-  </head>
-  <body>
-    <!--TABELAS BASICAS-->
+    table {
+      width: 400px;
+      height: 400px;
+      border-collapse: collapse;
+    }
 
-    <h1>Primeira tabela</h1>
-    <!--
+    td {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: top;
+      padding: 5px;
+    }
+
+    .numero {
+      vertical-align: bottom;
+    }
+  </style>
+  <title>tabela</title>
+</head>
+
+<body>
+  <!--TABELAS BASICAS-->
+
+  <h1>Primeira tabela</h1>
+  <!--
         hierarquia de tabelas(simples)
             table = tabela
                 table row = linha de tabela
                     table header = cabeçalho de tabela
                     table data = dado de tabela
     -->
-    <table>
-      <tr>
-        <td>A1</td>
-        <td>B1</td>
-        <td>C1</td>
-      </tr>
-      <tr>
-        <td>A2</td>
-        <td class="numero">B2</td>
-        <td>C3</td>
-      </tr>
-      <tr>
-        <td>A3</td>
-        <td class="numero">B3</td>
-        <td>C3</td>
-      </tr>
-    </table>
+  <table>
+    <tr>
+      <td>A1</td>
+      <td>B1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td class="numero">B2</td>
+      <td>C3</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td class="numero">B3</td>
+      <td>C3</td>
+    </tr>
+  </table>
+  <p><a class="voltar" href="../geral.html">voltar</a></p>
+</body>
 
-    <!--TABELAS GRANDES!-->
-
-    <h1>Uso de tabelas grandes</h1>
-
-    <!-- ANATOMIA PARA TABELAS GRANDES
-        TABLE
-            THEAD
-            TBODY
-            TFOOT
-    -->
-
-    <p><a class="voltar" href="../geral.html">voltar</a></p>
-  </body>
 </html>
