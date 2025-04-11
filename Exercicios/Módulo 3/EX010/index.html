@@ -31,12 +31,20 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,
         th {
             border: 1px solid black;
             padding: 5px;
+        }
+
+        table>thead>tr {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            transform: translateX(1px);
         }
 
         thead,
@@ -63,8 +71,10 @@
     -->
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -87,7 +97,24 @@
             </tr>
         </tfoot>
     </table>
-
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus qui sit maxime sapiente exercitationem,
+        aliquam eveniet, libero suscipit voluptatibus recusandae voluptatem at enim aperiam. Eius atque dolorum ipsum
+        voluptas sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem, repellendus perferendis,
+        quibusdam ex in tenetur sapiente esse dolorum atque architecto ratione? Esse, voluptatibus sint consequuntur
+        illum molestiae quibusdam reprehenderit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+        praesentium vero rerum iusto quos inventore deserunt id cum, illo, temporibus placeat eos magnam ipsa tenetur
+        beatae ad nihil aliquam aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae
+        atque incidunt inventore iusto a, expedita consectetur dignissimos saepe non doloremque distinctio amet
+        accusamus. Delectus cumque dolores iusto libero iure. </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus qui sit maxime sapiente exercitationem,
+        aliquam eveniet, libero suscipit voluptatibus recusandae voluptatem at enim aperiam. Eius atque dolorum ipsum
+        voluptas sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem, repellendus perferendis,
+        quibusdam ex in tenetur sapiente esse dolorum atque architecto ratione? Esse, voluptatibus sint consequuntur
+        illum molestiae quibusdam reprehenderit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+        praesentium vero rerum iusto quos inventore deserunt id cum, illo, temporibus placeat eos magnam ipsa tenetur
+        beatae ad nihil aliquam aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae
+        atque incidunt inventore iusto a, expedita consectetur dignissimos saepe non doloremque distinctio amet
+        accusamus. Delectus cumque dolores iusto libero iure. </p>
     <p><a class="voltar" href="../geral.html">voltar</a></p>
 </body>
 

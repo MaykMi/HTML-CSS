@@ -186,18 +186,25 @@
                         <li class="space"><abbr
                                 title="Utilizamos as propriedades text-align e vertical-align para alinhar horizontalmente (left, center ou right) e verticalmente (top, middle ou bottom), respectivamente">alinhamentos</abbr>
                         </li>
-                        <p class="listaspace">
+                        <p class="space">
                             Por padrão a tag tabela vem <q>border-collapse: separate;</q> para aproximar as bordas
                             tempos que usar a propriedade e valor <q>border-collapse: collapse;</q>
                         </p>
+                        <li class="space">corpo da tabelas</li>
+                        <ul>
+                            <p class="space">Tags:</p>
+                            <li class="space"><abbr title="Para o cabeçalho">thead</abbr></li>
+                            <li class="space"><abbr title="Para o corpo">tbody</abbr></li>
+                            <li class="listaspace"><abbr title="Para o rodapé">tfoot</abbr></li>
+                        </ul>
+                        <li class="space"><abbr title="Título da tabela">caption</abbr></li>
+                        <li class="space">expansões de valores tabelados</li>
+                            <ul>
+                                <li class="space"><abbr title="expansão ocupando mais colunas, atributo inserido junto do valor necessário. é utilizado no dado que necessita alteração">colspan</abbr></li>
+                                <li class="listaspace"><abbr title="expansão ocupando mais linhas, atributo inserido junto do valor necessário. é utilizado no dado que necessita alteração">rowspan</abbr></li>
+                            </ul>
                     </ul>
-                    <li class="space">corpo da tabelas</li>
-                    <ul>
-                        <p class="space">Tags:</p>
-                        <li class="space"><abbr title="Para o cabeçalho">thead</abbr></li>
-                        <li class="space"><abbr title="Para o corpo">tbody</abbr></li>
-                        <li class="listaspace"><abbr title="Para o rodapé">tfoot</abbr></li>
-                    </ul>
+ 
                 </ol>
             </div>
             <button id="show-or-hideCSS">
@@ -308,8 +315,11 @@
                                     title="altera o estilo de um elemento HTML quando o usuário passa o mouse sobre ele.">hover</abbr>
                             </li>
                             <li><abbr title="Para estilizar links visitados adequadamente">visited</abbr></li>
-                            <li class="listaspace"><abbr
+                            <li><abbr
                                     title="altera o estilo de um elemento HTML quando o usuário clica com o mouse nele.">active</abbr>
+                            </li>
+                            <li class="listaspace"><abbr
+                                    title="permite aplicar estilos a um elemento com base na sua posição entre os elementos filhos do mesmo pai">nth-child</abbr>
                             </li>
                         </ul>
                         <li class="space"><abbr
@@ -366,8 +376,13 @@
                     e <q>transform: translate(top%, left%);</q> a propriedade transform será utilizada para mudar a
                     posição da imagem ou video relativo ao ponto de ancoragem</p>
                 <li class="space">Parallax effect</li>
-                <p>Basta utilizar o <q>background-attachment:fixed</q> e dependendo o <q>background-size: cover</q> para
+                <p class="listaspace">Basta utilizar o <q>background-attachment:fixed</q> e dependendo o
+                    <q>background-size: cover</q> para
                     ajustar a imagem ao tamanho da dela</p>
+                <li class="space">Cabeçalho fico em tabelas</li>
+                <p class="listaspace">table com <q>position: relative</q> e thead com <q>position: stinky; top:0;</q>.
+                </p>
+
             </ul>
         </div>
     </main>
