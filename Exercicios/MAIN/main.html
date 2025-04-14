@@ -42,6 +42,7 @@
                     </li>
                 </ol>
             </div>
+            <button class="materia"><a href="../JS/geral.html">JavaScript (Curso em video)</button>
         </div>
         <div class="containerd">
             <hr class="separar">
@@ -82,7 +83,7 @@
                     </ul>
                     <li class="space"><strong>Atributos dos links</strong></li>
                     <ul>
-                        <li class="listaspace"><abbr title="define onde o documento vinculado será aberto">target</abbr>
+                        <li class="space"><abbr title="define onde o documento vinculado será aberto">target</abbr>
                         </li>
                         <ul class="sublistapp">
                             <p>target pode utilizar:</p>
@@ -176,7 +177,7 @@
                             <li><abbr title="tag box-level de rodapé">footer</abbr></li>
                             <li><abbr title="tag box-level de sessão">section</abbr></li>
                             <li><abbr title="tag box-level de artigo">article</abbr></li>
-                            <li><abbr title="tag box-level de conteúdo periférico ao artigo">aside</abbr></li>
+                            <li class="listaspace"><abbr title="tag box-level de conteúdo periférico ao artigo">aside</abbr></li>
                         </ul>
                     </ul>
                     <li class="space"><abbr title="tag: table"><strong>Tabelas</strong></abbr></li>
@@ -193,7 +194,7 @@
                             tempos que usar a propriedade e valor <q>border-collapse: collapse;</q>
                         </p>
                         <li class="space">corpo da tabelas</li>
-                        <ul>
+                        <ul class="sublistapp">
                             <p class="space">Tags:</p>
                             <li class="space"><abbr title="Dentro iremos apenas organizar as colunas, e podemos colocar grupos ou ids para configurar uma coluna em especifico">colgroup</abbr></li>
                             <li class="space"><abbr title="Para o cabeçalho">thead</abbr></li>
@@ -202,7 +203,7 @@
                         </ul>
                         <li class="space"><abbr title="Título da tabela">caption</abbr></li>
                         <li class="space">expansões de valores tabelados</li>
-                        <ul>
+                        <ul class="sublistapp">
                             <li class="space"><abbr
                                     title="expansão ocupando mais colunas, atributo inserido junto do valor necessário. é utilizado no dado que necessita alteração">colspan</abbr>
                             </li>
@@ -211,15 +212,18 @@
                             </li>
                         </ul>
                         <li class="space"><abbr title="determina qual a direção dos dados do th">scope</abbr></li>
-                        <ul><p>pode ser:</p>
+                        <ul class="sublistapp"><p>pode ser:</p>
                             <li class="space"><abbr title="determina que os dados estão na coluna">col</abbr></li>
                             <li class="space"><abbr title="determina que os dados estão na linha">row</abbr></li>
                             <li class="space"><abbr title="determina que os dados estão nas colunas">colgroup</abbr></li>
-                            <li class="listaspace"><abbr title="determina que os dados estão nas linhas">rowgroup</abbr></li>
+                            <li class="space"><abbr title="determina que os dados estão nas linhas">rowgroup</abbr></li>
                         </ul>
-                        <P>Caso a tabela esteja esteja causando uma barra de rolagem, é possivel coloca-la dentro de uma div com a propriedade(CSS) de overflow-x, para que a barra de rolagem fique apenas na tabela e a div se ajuste ao tamanho do dispositivo</P>
+                        <P class="listaspace">Caso a tabela esteja esteja causando uma barra de rolagem, é possivel coloca-la dentro de uma div com a propriedade(CSS) de <strong>overflow-x</strong>, para que a barra de rolagem fique apenas na tabela e a div se ajuste ao tamanho do dispositivo</P>
                     </ul>
-
+                    <li class="space"><abbr title="um quadro que pode mostrar o site ou imagem estando em display: inline"><strong>iframe</strong></abbr></li>
+                    <ul>
+                        <li><abbr title="é um atributo da tag iframe, utilizado para definir a barra de rolagem. Podendo ser: auto, yes ou no">scrolling</abbr></li>
+                    </ul>
                 </ol>
             </div>
             <button id="show-or-hideCSS">
@@ -395,10 +399,11 @@
                     <q>background-size: cover</q> para
                     ajustar a imagem ao tamanho da dela
                 </p>
-                <li class="space">Cabeçalho fico em tabelas</li>
+                <li class="space">Cabeçalho fixo em tabelas</li>
                 <p class="listaspace">table com <q>position: relative</q> e thead com <q>position: stinky; top:0;</q>.
                 </p>
-
+                <li class="space">fast senquencia numérica</li>
+                <p class="listaspace">Assim como podemos utilizar o <q>*(numero)</q> para multiplicar é possivel adicionar $ as tags para uma sequencia numérica</p>
             </ul>
         </div>
     </main>

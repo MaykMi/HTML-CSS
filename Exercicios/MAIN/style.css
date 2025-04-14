@@ -120,6 +120,23 @@
   margin-bottom: 20px;
 }
 
+.materia {
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  padding: 5px;
+}
+
+.materia:active {
+  margin: auto;
+  margin-bottom: 25px;
+  display: block;
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
 main {
   width: 85%;
   height: 100%;
