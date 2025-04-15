@@ -222,8 +222,11 @@
                     </ul>
                     <li class="space"><abbr title="um quadro que pode mostrar o site ou imagem estando em display: inline"><strong>iframe</strong></abbr></li>
                     <ul>
-                        <li><abbr title="é um atributo da tag iframe, utilizado para definir a barra de rolagem. Podendo ser: auto, yes ou no">scrolling</abbr></li>
+                        <li class="space"><abbr title="é um atributo da tag &lt;iframe&gt;, utilizado para definir a barra de rolagem. Podendo ser: auto, yes ou no">scrolling</abbr></li>
+                        <li class="space"><abbr title="Atributo da tag &lt;iframe&gt; que permite adicionar conteúdo a um iframe vazio">srcdoc</abbr></li>
+                        <li class="listaspace"><abbr title="atributo da tag &lt;iframe&gt; que tem a função de segurança do iframe, podendo ser 'allow-popups-to-escape-sandbox'(segurança máxima), 'allow-same-origin'(permitindo da mesma origem), 'allow-form(permitindo formulários), 'allow-scripts'(permitindo scripts)">sandbox</abbr></li>
                     </ul>
+                    <p class="listaspace">É possivel abrir link dos próprio site dentro de iframes, basta utilizar o atributo name na tag &lt;iframe&gt; e o name utilizado serve de target na tag &lt;a&gt;</p>
                 </ol>
             </div>
             <button id="show-or-hideCSS">
@@ -256,9 +259,10 @@
                         <li><abbr
                                 title="Estruturas com display block irão ser alinhadas horizontalmente">inline-block(bloco)</abbr>
                         </li>
-                        <li class="listaspace"><abbr
+                        <li class="space"><abbr
                                 title="Indica que um elemento deve ser exibido como um bloco, ou seja, ocupando toda a largura disponível na página.">block</abbr>
                         </li>
+                        <li class="listaspace"><abbr title="organiza os filhos em uma única linha, ficando um ao lado do outro">flex</abbr></li>
                     </ul>
                     <li class="space"><strong>background</strong></li>
                     <ul>
