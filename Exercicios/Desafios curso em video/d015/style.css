@@ -39,11 +39,8 @@ iframe#tela {
 }
 
 section#redes {
-    display: block;
-    margin:auto;
+    padding-top: 20px;
     margin-right: 10px;
-    padding-top: 50px;
-    width: 90px;
     text-align: right;
 }
 
