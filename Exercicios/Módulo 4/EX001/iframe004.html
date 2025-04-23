@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt_br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a#voltar {
+            background-color: rgb(22, 22, 102);
+            padding: 5px;
+            border-radius: 10px;
+            color: azure;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        a#voltar:hover {
+            color: rgb(22, 22, 102);
+            background-color: azure;
+        }
+
+        .voltar {
+            display: block;
+            margin: 30px auto 20px auto;
+            text-align: center;
+        }
+    </style>
     <title>Iframes</title>
 </head>
+
 <body>
     <h1>meu site principal</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit placeat voluptatum hic eum explicabo, aliquid illo dolorem corrupti reprehenderit accusamus nostrum optio repellat quis quo dolore, ea totam in minima!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit placeat voluptatum hic eum explicabo, aliquid
+        illo dolorem corrupti reprehenderit accusamus nostrum optio repellat quis quo dolore, ea totam in minima!</p>
     <iframe src="pag002.html" frameborder="1" sandbox="allow-popups-to-escape-sandbox">
         <p>seu navegador não é compativel com isso</p>
     </iframe>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora odit veritatis. Ut alias inventore quo perspiciatis nemo magnam autem sunt fugit esse, rerum eaque quidem excepturi ea iusto facere?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora odit veritatis. Ut alias inventore
+        quo perspiciatis nemo magnam autem sunt fugit esse, rerum eaque quidem excepturi ea iusto facere?</p>
+    <p><a id="voltar" class="voltar" href="index.html">Voltar</a></p>
 </body>
+
 </html>

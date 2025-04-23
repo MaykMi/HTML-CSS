@@ -154,6 +154,8 @@ body {
       var(--cor4),
       var(--cor5));
   font: 1em Roboto Mono;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 button:hover {
