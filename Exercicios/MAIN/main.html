@@ -38,7 +38,8 @@
                             etc)</a></li>
                     <li class="modulos"><a href="../Módulo 3/geral.html">Módulo 3 (background, parallax e tabelas)</a>
                     </li>
-                    <li class="modulos"><a href="../Módulo 4/geral.html">Módulo 4 (iframe, formulários, mobile first)</a>
+                    <li class="modulos"><a href="../Módulo 4/geral.html">Módulo 4 (iframe, formulários, mobile
+                            first)</a>
                     </li>
                 </ol>
             </div>
@@ -176,7 +177,8 @@
                             <li><abbr title="tag box-level de rodapé">footer</abbr></li>
                             <li><abbr title="tag box-level de sessão">section</abbr></li>
                             <li><abbr title="tag box-level de artigo">article</abbr></li>
-                            <li class="listaspace"><abbr title="tag box-level de conteúdo periférico ao artigo">aside</abbr></li>
+                            <li class="listaspace"><abbr
+                                    title="tag box-level de conteúdo periférico ao artigo">aside</abbr></li>
                         </ul>
                     </ul>
                     <li class="space"><abbr title="tag: table"><strong>Tabelas</strong></abbr></li>
@@ -195,7 +197,9 @@
                         <li class="space">corpo da tabelas</li>
                         <ul class="sublistapp">
                             <p class="space">Tags:</p>
-                            <li class="space"><abbr title="Dentro iremos apenas organizar as colunas, e podemos colocar grupos ou ids para configurar uma coluna em especifico">colgroup</abbr></li>
+                            <li class="space"><abbr
+                                    title="Dentro iremos apenas organizar as colunas, e podemos colocar grupos ou ids para configurar uma coluna em especifico">colgroup</abbr>
+                            </li>
                             <li class="space"><abbr title="Para o cabeçalho">thead</abbr></li>
                             <li class="space"><abbr title="Para o corpo">tbody</abbr></li>
                             <li class="listaspace"><abbr title="Para o rodapé">tfoot</abbr></li>
@@ -211,34 +215,91 @@
                             </li>
                         </ul>
                         <li class="space"><abbr title="determina qual a direção dos dados do th">scope</abbr></li>
-                        <ul class="sublistapp"><p>pode ser:</p>
+                        <ul class="sublistapp">
+                            <p>pode ser:</p>
                             <li class="space"><abbr title="determina que os dados estão na coluna">col</abbr></li>
                             <li class="space"><abbr title="determina que os dados estão na linha">row</abbr></li>
-                            <li class="space"><abbr title="determina que os dados estão nas colunas">colgroup</abbr></li>
+                            <li class="space"><abbr title="determina que os dados estão nas colunas">colgroup</abbr>
+                            </li>
                             <li class="space"><abbr title="determina que os dados estão nas linhas">rowgroup</abbr></li>
                         </ul>
-                        <P class="listaspace">Caso a tabela esteja esteja causando uma barra de rolagem, é possivel coloca-la dentro de uma div com a propriedade(CSS) de <strong>overflow-x</strong>, para que a barra de rolagem fique apenas na tabela e a div se ajuste ao tamanho do dispositivo</P>
+                        <P class="listaspace">Caso a tabela esteja esteja causando uma barra de rolagem, é possivel
+                            coloca-la dentro de uma div com a propriedade(CSS) de <strong>overflow-x</strong>, para que
+                            a barra de rolagem fique apenas na tabela e a div se ajuste ao tamanho do dispositivo</P>
                     </ul>
-                    <li class="space"><abbr title="um quadro que pode mostrar o site ou imagem estando em display: inline"><strong>iframe</strong></abbr></li>
+                    <li class="space"><abbr
+                            title="um quadro que pode mostrar o site ou imagem estando em display: inline"><strong>iframe</strong></abbr>
+                    </li>
                     <ul>
-                        <li class="space"><abbr title="é um atributo da tag &lt;iframe&gt;, utilizado para definir a barra de rolagem. Podendo ser: auto, yes ou no">scrolling</abbr></li>
-                        <li class="space"><abbr title="Atributo da tag &lt;iframe&gt; que permite adicionar conteúdo a um iframe vazio">srcdoc</abbr></li>
-                        <li class="listaspace"><abbr title="atributo da tag &lt;iframe&gt; que tem a função de segurança do iframe, podendo ser 'allow-popups-to-escape-sandbox'(segurança máxima), 'allow-same-origin'(permitindo da mesma origem), 'allow-form(permitindo formulários), 'allow-scripts'(permitindo scripts)">sandbox</abbr></li>
+                        <li class="space"><abbr
+                                title="é um atributo da tag &lt;iframe&gt;, utilizado para definir a barra de rolagem. Podendo ser: auto, yes ou no">scrolling</abbr>
+                        </li>
+                        <li class="space"><abbr
+                                title="Atributo da tag &lt;iframe&gt; que permite adicionar conteúdo a um iframe vazio">srcdoc</abbr>
+                        </li>
+                        <li class="listaspace"><abbr
+                                title="atributo da tag &lt;iframe&gt; que tem a função de segurança do iframe, podendo ser 'allow-popups-to-escape-sandbox'(segurança máxima), 'allow-same-origin'(permitindo da mesma origem), 'allow-form(permitindo formulários), 'allow-scripts'(permitindo scripts)">sandbox</abbr>
+                        </li>
                     </ul>
-                    <p class="space">É possivel abrir link dos próprio site dentro de iframes, basta utilizar o atributo name na tag &lt;iframe&gt; e o name utilizado serve de target na tag &lt;a&gt;</p>
-                    <p class="listaspace">Utilizando a propriedade <q>background-size: cover</q> na pagina do iframe é possivel tornar o conteudo ou imagem ajustável ao tamanho do iframe</p>
-                    <li class="space"><abbr title="tag: &lt;form&gt; | Maneira de em uma página da web permitir que um usuário insira dados que são enviados a um servidor para processamento"><strong>Formulário</strong></abbr></li>
-                    <ul><p>Propriedades:</p>
-                        <li class="space"><abbr title="controla se o navegador pode preencher automaticamente os campos do formulário, baseando-se em dados previamente inseridos pelo usuário">autocomplete</abbr></li>
-                        <li class="space"><abbr title="especifica o URL para onde os dados do formulário serão enviados quando este for submetido, como um script em PHP, Python ou Node.js">action</abbr></li>
-                        <li class="space"><abbr title="define o método HTTP a ser utilizado para enviar os dados do formulário. podendo ser: GET e POST, sendo GET o método padrão. onde get os torna visíveis na barra de endereço e POST os torna invisíveis na URL. É adequado para dados sensíveis">method</abbr></li>
+                    <p class="space">É possivel abrir link dos próprio site dentro de iframes, basta utilizar o atributo
+                        name na tag &lt;iframe&gt; e o name utilizado serve de target na tag &lt;a&gt;</p>
+                    <p class="listaspace">Utilizando a propriedade <q>background-size: cover</q> na pagina do iframe é
+                        possivel tornar o conteudo ou imagem ajustável ao tamanho do iframe</p>
+                    <li class="space"><abbr
+                            title="tag: &lt;form&gt; | Maneira de em uma página da web permitir que um usuário insira dados que são enviados a um servidor para processamento"><strong>Formulário</strong></abbr>
+                    </li>
+                    <ul>
+                        <p>Propriedades:</p>
+                        <li class="space"><abbr
+                                title="controla se o navegador pode preencher automaticamente os campos do formulário, baseando-se em dados previamente inseridos pelo usuário">autocomplete</abbr>
+                        </li>
+                        <li class="space"><abbr
+                                title="especifica o URL para onde os dados do formulário serão enviados quando este for submetido, como um script em PHP, Python ou Node.js">action</abbr>
+                        </li>
+                        <li class="space"><abbr
+                                title="define o método HTTP a ser utilizado para enviar os dados do formulário. podendo ser: GET e POST, sendo GET o método padrão. onde get os torna visíveis na barra de endereço e POST os torna invisíveis na URL. É adequado para dados sensíveis">method</abbr>
+                        </li>
                     </ul>
-                    <ul><p>Tags</p>
-                        <li class="space"><abbr title="podendo ser utilizado ao lado de uma tag p para inserir um cadastro">&lt;input:text&gt;</abbr></li>
-                        <li class="space"><abbr title="Utilizado para enviar informações">&lt;input:submit&gt;</abbr></li>
-                        <li class="lista"><abbr title="É utilizada para especificar qual o rótulo do input (a que se refere o input)">label</abbr></li>
+                    <ul>
+                        <p>Tags</p>
+                        <li class="lista"><abbr
+                                title="É utilizada para especificar qual o rótulo do input (a que se refere o input)">label</abbr>
+                        </li>
+                        <li class="space"><abbr
+                                title="podendo ser utilizado ao lado de uma tag p para inserir um cadastro">&lt;input:text&gt;</abbr>
+                        </li>
+                        <li class="space"><abbr title="Utilizado para enviar informações">&lt;input:submit&gt;</abbr>
+                        </li>
+                        <li class="space"><abbr title="Utilizado para senhas">&lt;input:passward&gt;</abbr></li>
+                        <li class="space"><abbr title="resetar dados">&lt;input:reset&gt;</abbr></li>
+                        <li class="space"><abbr title="Focado na utilização de numeros">&lt;input:number&gt;</abbr></li>
+                        <li class="space"><abbr title="utilizado para mêses">&lt;input:mounth&gt;</abbr></li>
+                        <li class="space"><abbr title="utilizado para datas">&lt;input:date&gt;</abbr></li>
+                        <li class="space"><abbr title="utilizado para horas">&lt;input:time&gt;</abbr></li>
                     </ul>
-                    
+                    <p class="space">input propriedades</p>
+                    <ul>
+                        <li class="space"><abbr title="tipo de input, determina a utilizade da tag">type</abbr></li>
+                        <li class="space"><abbr title="util para auxiliar a localidade">name</abbr></li>
+                        <li class="space"><abbr title="ajuda o html e o JavaScript a localizar">id</abbr></li>
+                        <li class="space"><abbr
+                                title="aparece dependendo do tipo de input utilizado e determina o que vai estar escrito">value</abbr>
+                        </li>
+                        <li class="space"><abbr title="Exige a necessidade de preencher um campo">required</abbr></li>
+                        <li class="space"><abbr title="determina quantidade minima no campo">minlength</abbr></li>
+                        <li class="space"><abbr title="determina quantidade maxima no campo">maxlength</abbr></li>
+                        <li class="space"><abbr title="determina tamanho da caixa">size</abbr></li>
+                        <li class="space"><abbr title="permite escrever dento da caixa">placeholder</abbr></li>
+                        <li class="space"><abbr
+                                title="Permite controlar o autocomplete,determinar o que ele precisa completar">autocomplete</abbr>
+                        </li>
+                        <p class="space">propriedades normalmente utilizadas em input de valores</p>
+                        <li class="space"><abbr title="para determinar o valor minimo">min</abbr></li>
+                        <li class="space"><abbr title="para determinar o valor maximo">max</abbr></li>
+                        <li class="space"><abbr
+                                title="determina quanto vai somar e qual tipo de variação é aceita">step</abbr></li>
+                        <li class="listaspace"><abbr title="determina um valor inicial">value</abbr></li>
+                    </ul>
                 </ol>
             </div>
             <button id="show-or-hideCSS">
@@ -260,8 +321,11 @@
                             title="tag html: span, é um conteiner generico em linha para conteúdo fraseado, podendo utilizar class ou id na tag para aplicar a css">span</abbr>
                     </li>
                     <li class="listaspace"><abbr title="colocar uma borda, usa tamanho, estilo e cor">border</abbr></li>
-                    <li class="listaspace"><abbr title="determina o tempo que demora umda transição">transition-durantion</abbr></li>
-                    <li class="listaspace"><abbr title="é uma propriedade que define como a largura e a altura totais de um elemento são calculadas pode ser: border-box (que ajusta o espaço ao redor da box considerando a borda colocada)">box-sizing</abbr></li>
+                    <li class="listaspace"><abbr
+                            title="determina o tempo que demora umda transição">transition-durantion</abbr></li>
+                    <li class="listaspace"><abbr
+                            title="é uma propriedade que define como a largura e a altura totais de um elemento são calculadas pode ser: border-box (que ajusta o espaço ao redor da box considerando a borda colocada)">box-sizing</abbr>
+                    </li>
                     <li class="space">
                         <abbr
                             title="define se um elemento é tratado como um bloco ou elemento inline e o layout usado para seus filhos, como layout de fluxo, grid ou flex.">display</abbr>
@@ -275,7 +339,9 @@
                         <li class="space"><abbr
                                 title="Indica que um elemento deve ser exibido como um bloco, ou seja, ocupando toda a largura disponível na página.">block</abbr>
                         </li>
-                        <li class="listaspace"><abbr title="organiza os filhos em uma única linha, ficando um ao lado do outro">flex</abbr></li>
+                        <li class="listaspace"><abbr
+                                title="organiza os filhos em uma única linha, ficando um ao lado do outro">flex</abbr>
+                        </li>
                     </ul>
                     <li class="space"><strong>background</strong></li>
                     <ul>
@@ -420,7 +486,8 @@
                 <p class="listaspace">table com <q>position: relative</q> e thead com <q>position: stinky; top:0;</q>.
                 </p>
                 <li class="space">fast senquencia numérica</li>
-                <p class="listaspace">Assim como podemos utilizar o <q>*(numero)</q> para multiplicar é possivel adicionar $ as tags para uma sequencia numérica</p>
+                <p class="listaspace">Assim como podemos utilizar o <q>*(numero)</q> para multiplicar é possivel
+                    adicionar $ as tags para uma sequencia numérica</p>
             </ul>
         </div>
     </main>
