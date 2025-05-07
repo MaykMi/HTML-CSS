@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a#voltar {
+            background-color: rgb(22, 22, 102);
+            padding: 5px;
+            border-radius: 10px;
+            color: azure;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        a#voltar:hover {
+            color: rgb(22, 22, 102);
+            background-color: azure;
+        }
+
+        .voltar {
+            display: block;
+            margin: 30px auto 20px 30px;
+            text-align: center;
+        }
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>color, range e file</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulários</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>color</legend>
+            <p>
+                <label for="cor">cor</label>
+                <input type="color" name="cor" id="cor">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>range</legend>
+            <p>
+                <input type="range" name="range" id="range" step="10" min="10" max="50">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>file</legend>
+            <p>
+                <label for="foto">foto do perfil</label>
+                <input type="file" name="foto" id="foto">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <p><a id="voltar" class="voltar" href="../index.html">voltar</a></p>
+</body>
+
+</html>

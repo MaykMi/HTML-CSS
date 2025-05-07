@@ -151,7 +151,7 @@
                     </ul>
                     <li class="space"><strong>Modelo de caixas</strong></li>
                     <ul>
-                        <li class="space">Propriedades</li>
+                        <li class="space">Propriedades(css)</li>
                         <ul class="sublistapp">
                             <li><abbr title="altura">height</abbr></li>
                             <li><abbr title="largura">width</abbr></li>
@@ -249,7 +249,7 @@
                             title="tag: &lt;form&gt; | Maneira de em uma página da web permitir que um usuário insira dados que são enviados a um servidor para processamento"><strong>Formulário</strong></abbr>
                     </li>
                     <ul>
-                        <p>Propriedades:</p>
+                        <p>Atributos:</p>
                         <li class="space"><abbr
                                 title="controla se o navegador pode preencher automaticamente os campos do formulário, baseando-se em dados previamente inseridos pelo usuário">autocomplete</abbr>
                         </li>
@@ -262,9 +262,18 @@
                     </ul>
                     <ul>
                         <p>Tags</p>
-                        <li class="lista"><abbr
+                        <li class="space"><abbr
                                 title="É utilizada para especificar qual o rótulo do input (a que se refere o input)">label</abbr>
                         </li>
+                        <li class="space"><abbr
+                                title="É utilizado para agrupar diferentes inputs que possuem finalidade semelhante">&lt;fieldset&gt;</abbr>
+                        </li>
+                        <li class="space"><abbr title="Utilizado para nomearo fieldset">&lt;legend&gt;</abbr></li>
+                        <li class="space"><abbr title="Utilizado para adicionar selecionadores">select</abbr></li>
+                            <ul class="lista">tags
+                                <li class="space"><abbr title="será uma escolha ">option</abbr></li>
+                            </ul>
+                        <p class="space"><strong>input:</strong></p>
                         <li class="space"><abbr
                                 title="podendo ser utilizado ao lado de uma tag p para inserir um cadastro">&lt;input:text&gt;</abbr>
                         </li>
@@ -276,8 +285,18 @@
                         <li class="space"><abbr title="utilizado para mêses">&lt;input:mounth&gt;</abbr></li>
                         <li class="space"><abbr title="utilizado para datas">&lt;input:date&gt;</abbr></li>
                         <li class="space"><abbr title="utilizado para horas">&lt;input:time&gt;</abbr></li>
+                        <li class="space"><abbr title="utilizado para email">&lt;input:email&gt;</abbr></li>
+                        <li class="space"><abbr title="utilizado para telefone">&lt;input:tel&gt;</abbr></li>
+                        <p class="space"><strong>OBS:</strong>É possivel utilizar o atributo pattern na tag '&lt;input:tel&gt;' para determinar o que necessita ser escrito</p>
+                        <li class="space"><abbr title="utilizado para marcar alternativa">&lt;input:radio&gt;</abbr></li>
+                        <p class="space"><strong>OBS:</strong>Para criar alternancia nas escolhas é necessário ambos os inputs terem o mesmo 'name', porem 'id' diferentes para o label ser utilizável</p>
+                        <li class="space"><abbr title="utilizado para criar caixa de marcação">&lt;input:checkbox&gt;</abbr></li>
+                        <li class="space"><abbr title="Adiciona ao site um selecionador de cor">&lt;input:color&gt;</abbr></li>
+                        <li class="space"><abbr title="Adiciona uma barra com bolinha e podemos selecionar o posicionamento da bolinha">&lt;input:range&gt;</abbr></li>
+                        <p class="space">é possivel utilizar os atributos de numeros, como step, min, max e value pra determinar o valor inicial</p>
+                        <li class="listaspace"><abbr title="Se utiliza para enviar arquivos, necessita estar em um formulário tipo post, por conta das limitações de dados">&lt;input:file&gt;</abbr></li>
                     </ul>
-                    <p class="space">input propriedades</p>
+                    <p class="space">input atributos</p>
                     <ul>
                         <li class="space"><abbr title="tipo de input, determina a utilizade da tag">type</abbr></li>
                         <li class="space"><abbr title="util para auxiliar a localidade">name</abbr></li>
@@ -293,7 +312,7 @@
                         <li class="space"><abbr
                                 title="Permite controlar o autocomplete,determinar o que ele precisa completar">autocomplete</abbr>
                         </li>
-                        <p class="space">propriedades normalmente utilizadas em input de valores</p>
+                        <p class="space">atributos normalmente utilizadas em input de valores</p>
                         <li class="space"><abbr title="para determinar o valor minimo">min</abbr></li>
                         <li class="space"><abbr title="para determinar o valor maximo">max</abbr></li>
                         <li class="space"><abbr
