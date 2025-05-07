@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a#voltar {
+            background-color: rgb(22, 22, 102);
+            padding: 5px;
+            border-radius: 10px;
+            color: azure;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        a#voltar:hover {
+            color: rgb(22, 22, 102);
+            background-color: azure;
+        }
+
+        .voltar {
+            display: block;
+            margin: 30px auto 20px 30px;
+            text-align: center;
+        }
+    </style>
+    <title>Output</title>
+</head>
+
+<body>
+    <h1>Exemplos sobre formulários</h1>
+    <form action="" method="get">
+        <p>
+            <label for="in1">Numero 1</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero 2</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <hr>
+        <p>
+            <input type="range" name="range" id="irange" step="10" value="10" min="10" max="50" oninput="ival.innerHTML = Number(irange.value)">
+            <output id="ival">10</output>
+        </p>
+        <hr>
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcidade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p><a href="../index.html" id="voltar" class="voltar">voltar</a></p>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+
+</html>

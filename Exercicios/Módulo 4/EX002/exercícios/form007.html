@@ -32,33 +32,70 @@
         fieldset {
             margin-bottom: 20px;
         }
+        fieldset.select {
+            width: 220px;
+        }
+        fieldset.data{
+            width: 250px;
+        }
+        fieldset.text {
+            width: 310px;
+        }
     </style>
     <title>select, datalist e textarea</title>
 </head>
 
 <body>
     <h1>exemplos de formulário</h1>
-    <form action="" method="get">
-        <p>
-            <label for="est">Estado</label>
-            <select name="estado" id="estado">
-                <optgroup label="Região Sudeste">
-                    <option value="MG">Minas Gerais</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
-                </optgroup>
-
-                <optgroup label="Região Nordeste">
-                    <option value="MA">Maranhão</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                </optgroup>
-            </select>
-        </p>
-        <p>
+    <form action="" method="post">
+        <fieldset class="select">
+            <legend>select</legend>
+            <p>
+                <label for="est">Estado</label>
+                <select name="estado" id="estado">
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
+            </p>
+        </fieldset>
+        <fieldset class="data">
+            <legend>datalist</legend>
+            <p>
+                <label for="prof">profissão</label>
+                <input type="text" name="prof" id="prof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Adminininastro</option>
+                    <option value="CONT">Contabilidade</option>
+                    <option value="DEV">Desenvolverdor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        <fieldset class="text">
+            <legend>textarea</legend>
+            <label for="msg">mensage</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
     <p><a id="voltar" class="voltar" href="../index.html">voltar</a></p>
 </body>
