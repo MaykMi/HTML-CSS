@@ -1,140 +1,72 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+/*Geral*/
+
+@media all {
+  * {
     margin: 0;
     padding: 0;
-}
+  }
 
-root {
-    /*Palleta*/
-    --Roxo-escuro: #3C096C;
-    --Roxo: #5A189A;
-    --Roxo-claro: #9D4EDD;
-    --Amarelo-claro: #FFC880;
-    --Amarelo-escuro: #FF9100;
-    --Fundo-amarelo: #ffebd0;
-    /*Fontes*/
-    --font-main-text: Kanit
-}
+  html,
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: black;
+  }
 
-
-.classicas {
-    background-color: var(--Roxo);
-    border-radius:12px;
-    margin: 10px 5px auto 5px;
-    padding: -100px;
-   }
-   
-.galeria {
-    background-color: var(--Fundo-amarelo);
-    text-align: center;
-    font-size: 1.5em;
-    padding: 5px 0px 5px 0px;
-    margin: 50px auto 20px auto;
-    width: 200px;
-    position: relative; top: 10px;
-    border-width: 2px;
-    border-color: var(--Roxo-claro);
-    border-radius: 20px;
-}
-
-.topicos {
-    background-color: #ffebd0;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 2px 8px;
-}
-.texto {
-    text-align: justify;
-    text-indent: 30px;
-    padding: 0px 20px 15px 20px;
-}
-
-.foto1{ 
-    
-    width: 400px;
-    height: 400px;
-}
-
-.fotop1 {
-    margin-top: -200px;
-}
-
-body{
-    background-image: linear-gradient( 180deg, #FFC880, #9D4EDD);
-    background-attachment: fixed;
+  header > h1 {
+    color: white;
     font-family: Kanit;
-}
-
-header {
-    background-color: rgb(251, 255, 219);
-    border: 2px solid #5A189A;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 5px 5px 15px 8px #59189a57;
-    margin: 0px auto 10px auto;
-}
-
-nav {
-    background-color: #FFC880;
-    padding: 5px 0px 10px 0px;
-}
-a {
-    padding: 0px 0px 0px 0px;
-}
-
-button {
-    background-color: #eee2fa;
-    font-family: Roboto Mono;
-    font-size: 1em;
-    border-width: 5px;
-    border-color: transparent;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(216, 112, 147, 0.767);
-    margin: 0px -5px 0px 7px;
-  }
-  
-button:active {
-    border: inset;
-    border-width: 3px 0px 0px 3px;
-    border-top-color: rgba(128, 0, 128, 0.671);
-    border-left-color: rgba(128, 0, 128, 0.671);
-    box-shadow: 0px 0px 0px transparent;
-    position: relative; top: 6px; left: 11px;
-    margin: 0px 9px 0px 0px;
-  }
-
-hr{ 
-
-    border:         none;
-    border-left:    1px solid hsla(200, 10%, 50%,100);
-    height:         30px;
-    width:          1px;
-    display: inline-block; 
-    position: relative; top: 5px;left: 9px;
-    margin: -5px 2px -5px -2px;      
-}
-
-main {
-    background-color: rgb(251, 255, 219);
-    border-radius: 15px 0px 15px 0px;
-    border: 2px solid #5A189A;
-    box-shadow: 5px 5px 15px 8px #59189a57;
-}
-
-article {
-    background-color: rgb(251, 255, 219);
-    padding-bottom: 20px;
-}
-
-h1 {
     text-align: center;
+  }
+
+  header > p {
+    color: white;
+    font-family: kanit;
+    text-align: center;
+  }
+
+  hr {
+    width: 70vw;
+    margin: auto;
+  }
+
+  main > p {
+    color: white;
+    font-family: kanit;
+    text-align: center;
+  }
+
+  main > p.cute {
+    width: 60vw;
+    margin: auto;
+    color: white;
+    font-family: kanit;
+    text-align: center;
+    overflow-y: auto;
+  }
+
+  div#fotos {
+    display: flex;
+    justify-content: center;
+  }
+
+  img.foto1 {
+    width: 30vw;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
 }
 
-h2 {
-    text-align: left;
-    padding: 5px 0px 0px 3px;
-    margin: 10px 0px 0px 10px;
+/*Paisagem*/
+
+@media screen and (orientation: landscape) {
 }
 
+/*Retrato*/
 
-
+@media screen and (orientation: portrait) {
+}
