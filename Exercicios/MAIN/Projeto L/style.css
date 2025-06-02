@@ -7,6 +7,7 @@
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   html,
@@ -51,14 +52,41 @@
 
   div#fotos {
     display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 10px;
     justify-content: center;
+    overflow: hidden;
   }
 
-  img.foto1 {
-    width: 30vw;
+  img {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
     border: 5px solid white;
     border-radius: 10px;
-  }
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div#contador{
+    color: white;
+    font-family: kanit;
+    text-align: center;
+}
+
+.destaque {
+    display:inline-block;
+    color: red;
+}
 }
 
 /*Paisagem*/

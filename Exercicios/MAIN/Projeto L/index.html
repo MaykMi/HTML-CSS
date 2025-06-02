@@ -16,10 +16,12 @@
 
     <main>
         <div id="fotos">
-            <img class="foto1" srcset="Midias/fotos/1x1000.png" alt="1x1000">
+            <img src="Midias/fotos/1x1000.png" alt="1x1000">
+            <img src="Midias/fotos/2x1000.png" alt="2x1000">
+            <img src="Midias/fotos/3x1000.png" alt="3x1000">
         </div>
         <hr>
-        <p>time</p>
+        <div id="contador" class="contador">carregando...</div>
         <hr>
         <p class="cute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab necessitatibus, quo assumenda
             labore obcaecati fuga iusto molestiae illum eligendi adipisci natus! Sed, suscipit assumenda ducimus
@@ -29,6 +31,47 @@
     <footer>
 
     </footer>
+
+    <script>
+        let imagens = document.querySelectorAll('img');
+        let index = 0;
+
+        function alternarImagens() {
+            imagens.forEach(img => {
+                img.style.opacity = '0';
+                img.style.transform = 'translateX(-100%)';
+        });
+
+            imagens[index].style.opacity = '1';
+            imagens[index].style.transform = 'translateX(0)';
+
+            let proximaIndex = (index + 1) % imagens.length;
+            imagens[proximaIndex].style.transform = 'translateX(100%)';
+
+            index = proximaIndex
+        }
+
+        setInterval(alternarImagens, 10000);
+
+        alternarImagens()
+
+        function atualizarContador() {
+            let inicio = new Date(2023, 10, 21);
+            let agora = new Date();
+            let diferencaMs = agora - inicio;
+
+            let dias = Math.floor(diferencaMs / (1000 * 60 * 60 * 24));
+            let horas = Math.floor((diferencaMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutos = Math.floor((diferencaMs % (1000 * 60 * 60)) / (1000 * 60));
+            let segundos = Math.floor((diferencaMs % (1000 * 60)) / 1000);
+
+            document.getElementById('contador').innerHTML =
+                `E fazem ${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} que tenho o prazer de poder estar ao seu lado`;
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+    </script>
 </body>
 
 </html>
