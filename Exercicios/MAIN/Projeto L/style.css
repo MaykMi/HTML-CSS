@@ -136,6 +136,18 @@
     color: pink;
     font-weight: bold;
   }
+
+    span#pop1:hover,
+  #pop2:hover,
+  #pop3:hover,
+  #pop4:hover,
+  #pop5:hover,
+  #pop6:hover,
+  #ssecret:hover {
+    color: rgb(255, 100, 126);
+    font-weight: bold;
+  }
+
   div#music {
     background-color: aliceblue;
     border-radius: 20px;
@@ -146,6 +158,18 @@
     justify-content: center;
     text-align: center;
   }
+
+  #secret {
+    display: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: azure;
+    width: 300px;
+    text-align: center;
+    font-family: kanit;
+  }
+  
 }
 
 /*Paisagem*/
