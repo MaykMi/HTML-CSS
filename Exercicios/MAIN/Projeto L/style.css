@@ -96,11 +96,35 @@
     text-align: center;
   }
 
+  div#popup1 {
+    display: none;
+  }
+  div#popup2 {
+    display: none;
+  }
+  div#popup3 {
+    display: none;
+  }
+  div#popup4 {
+    display: none;
+  }
+  div#popup5 {
+    display: none;
+  }
+  div#popup6 {
+    display: none;
+  }
+
   h2.tpop,
   p.ttpop {
     background-color: beige;
     width: 600px;
     margin: auto;
+  }
+
+  p.ttpop {
+    padding: 10px;
+    font-family: kanit;
   }
 
   span#pop1,
@@ -111,6 +135,16 @@
   #pop6 {
     color: pink;
     font-weight: bold;
+  }
+  div#music {
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 310px;
+    justify-content: center;
+    text-align: center;
   }
 }
 
