@@ -375,9 +375,32 @@
                         <li class="space"><abbr title="Utilizado para uma configuração geral">all</abbr></li>
                         <li class="space"><abbr title="Para definir o que aparece na tela">screen</abbr></li>
                         <li class="space"><abbr title="Definir o que iria aparecer em impressão">print</abbr></li>
-                        <li class="space"><abbr
+                        <li class="listaspace"><abbr
                                 title="podemos definir a orientação da tela entre portrait(retrato) e landscape(paisagem). iria necessitar colocar a media em seguida o and e entre os () a orientação, por exemplo: media= 'screen and (orientation: portrait)'">and
                                 ()</abbr></li>
+                    </ul>
+                    <li class="space"><abbr
+                            title="forma de controlar a exibição em determinado dispositivo baseado no tamanh da tela">Device
+                            Breakpoints</abbr></li>
+                    <p class="space">Tipos</p>
+                    <ul class="space">
+                        <li class="space"><abbr
+                                title="Para dispositivos bem pequenos (Telefones, de 600px pra baixo)"><q>@media only
+                                    screen
+                                    and (max-width: 600px) {...}</q></abbr></li>
+                        <li class="space"><abbr
+                                title="Para dispositivos pequenos (tablets em modo retrato, telefones largos, 600px pra cima)"><q>@media
+                                    only screen and (min-width: 600px) {...}
+                                </q></abbr></li>
+                        <li class="space"><abbr
+                                title="Para dispositivos médios (tablets em modo paisagem, 768px pra cima)"><q>@media
+                                    only screen and (min-width: 768px) {...}</q></abbr></li>
+                        <li class="space"><abbr
+                                title="Para dispositivos grandes (notebook, monitore, 992px pra cima)"><q>@media only
+                                    screen and (min-width: 992px) {...}</q></abbr></li>
+                        <li class="listaspace"><abbr
+                                title="Para dispositivos bem grandes (TVs, notebooks ou monitores grandes, 1200px pra cima)"><q>@media
+                                    only screen and (min-width: 1200px) {...}</q></abbr></li>
                     </ul>
                     <li class="listaspace"><abbr title="colocar uma borda, usa tamanho, estilo e cor">border</abbr></li>
                     <li class="listaspace"><abbr
@@ -395,7 +418,7 @@
                         <li><abbr
                                 title="Estruturas com display block irão ser alinhadas horizontalmente">inline-block(bloco)</abbr>
                         </li>
-                        <li class="space"><abbr
+                        <li><abbr
                                 title="Indica que um elemento deve ser exibido como um bloco, ou seja, ocupando toda a largura disponível na página.">block</abbr>
                         </li>
                         <li class="listaspace"><abbr
