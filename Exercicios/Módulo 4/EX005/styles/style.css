@@ -16,18 +16,37 @@ html {
 }
 
 header {
+  background-color: rgb(218, 255, 211);
+}
+
+header > h1 {
+  padding: 10px;
     text-align: center;
 }
 
 nav {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-nav>a {
-    background-color: rgb(163, 255, 163);
-    padding: 20px;
-    padding-top: 13px;
-    margin-left: 30px;
+menu {
+  display: block;
+}
+
+menu > ul {
+  list-style-type: none;
+}
+
+menu > ul > li > a {
+  display: block;
+  background-color: rgb(163, 255, 163);
+  border-top: 2px solid green;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+menu > ul > li > a:hover {
+  background-color: rgb(113, 255, 113);
 }
 
 body {
@@ -36,13 +55,19 @@ body {
 
 main {
   background-color: rgb(211, 255, 214);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  width: 90vw;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
-main>p {
-    margin: 5;
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 20px;
 }
